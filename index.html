@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Deconstructor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="chinese">解构汉字</span>
+                <span class="translation">Chinese Deconstructor</span>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="输入汉字或俄语..." class="search-input">
+                <button id="search-btn" class="search-btn">Поиск</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="results-section" class="results-section">
+                <!-- Результаты будут здесь -->
+            </section>
+
+            <section class="radicals-section">
+                <h2 class="section-title">Ключевые Радикалы</h2>
+                <div id="radicals-grid" class="radicals-grid">
+                    <!-- Карточки радикалов будут генерироваться через JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Изучайте китайский через структуру иероглифов</p>
+        </footer>
+    </div>
+
+    <script src="radicals.js"></script>
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
