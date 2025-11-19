@@ -33,8 +33,6 @@ function renderRadicals(availabelsRadicals = null) {
                 `<div class="radical-variants">
                     <div class="variants-list">
                         ${rad.variants.slice(1).reduce((str, value) => str + `<span class="variant-char">${value}</span>`, '')}
-                        <span class="variant-char">⺌</span>
-                        <span class="variant-char">⼩</span>
                     </div>
                 </div>` : ''}
             </div>
@@ -129,4 +127,5 @@ function showWordsByRadical(radical) {
     } else {
         resultsSection.innerHTML += `<p>Нет слов с этим радикалом в базе данных.</p>`;
     }
+
 }
